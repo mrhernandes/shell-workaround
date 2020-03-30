@@ -45,5 +45,5 @@ mysqldump -u$DBUSER  -p"$DBPASS" $DBNAME --single-transaction --no-create-info t
 
 tar -zcf backup.tar zabbix-1-schema.sql zabbix-2-config.sql zabbix-3-history.sql zabbix-4-trends.sql
 
-#sshpass -p "password" scp backup.tar root@192.168.0.113:/opt/
+#Copy to another server
 sshpass -p "password" scp backup.tar root@192.168.0.113:/opt/
